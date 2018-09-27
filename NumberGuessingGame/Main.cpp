@@ -10,12 +10,14 @@ int main()
 		if (stillGuessing(currentMin, currentMax) == 'S') 
 		{
 			currentMax / 2;
+			continue;
 		}
-		if (stillGuessing(currentMin, currentMax) == 'L') 
+		else if (stillGuessing(currentMin, currentMax) == 'L') 
 		{
-			
+			 (currentMax / pow(2.0f, currentMin));
+			 continue;
 		}
-		if (stillGuessing(currentMin, currentMax) == 'I') 
+		else if (stillGuessing(currentMin, currentMax) == 'I') 
 		{
 			cout << "Invalid Answer! Try again!!!!" << endl;
 			continue;

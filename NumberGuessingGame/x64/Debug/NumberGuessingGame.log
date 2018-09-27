@@ -1,0 +1,3 @@
+﻿  Manager.cpp
+d:\classworkass1\numberguessinggamenew\numberguessinggame\manager.cpp(82): warning C4715: 'stillGuessing': not all control paths return a value
+  NumberGuessingGame.vcxproj -> D:\ClassWorkAss1\NumberGuessingGameNew\x64\Debug\NumberGuessingGame.exe
