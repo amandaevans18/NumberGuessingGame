@@ -8,7 +8,7 @@ char stillGuessing(int currentMin, int currentMax)
 	//check to see if the numbers are close together
 	if (difference > 10)
 	{
-		cout << "Is your number between " << currentMin << " and " << currentMax << endl;
+		cout << "Is your number " << currentMin << "?"<<endl;
 		cin >> userInput;
 		cin.clear();
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -17,10 +17,10 @@ char stillGuessing(int currentMin, int currentMax)
 		{
 			if (userInput == 'y' || userInput == 'Y')
 			{
-				//then the number has to be 0-50 condition numbers need to go smaller! 
-				return 'S';
-			}
-			else if (userInput == 'n' || userInput == 'N')
+				//We guessed right!! 
+				return 'W';
+			}//we didnt guess right lets make our number pool smaller!
+			else
 			{
 				cout << "Is your number larger?" << endl;
 				cin >> userInput;
@@ -66,11 +66,6 @@ char stillGuessing(int currentMin, int currentMax)
 					//then the number has to be even! 
 					return 'E';
 				}
-				else
-				{
-					return 'I';
-				}
-
 			}
 			else
 			{
