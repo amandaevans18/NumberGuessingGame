@@ -18,18 +18,21 @@ int main()
 		{
 			if (checkedGuess == 'S')
 			{
+				cout << "Smaller" << endl;
 				numberBeingGuessed = true;
-				currentMax = currentMax/ 2;
+				currentMax = (currentMax + currentMin) / 2;
 				continue;
 			}
 			else if (checkedGuess == 'L')
 			{
+				cout << "Larger" << endl;
 				numberBeingGuessed = true;
-				currentMin = (currentMax / pow(2.0f, currentMin));
+				currentMin = (currentMax + currentMin) / 2;
 				continue;
 			}
 			else if (checkedGuess == 'W') 
 			{
+				cout << "Win"<<endl;
 				numberBeingGuessed = false;
 				break;
 			}
